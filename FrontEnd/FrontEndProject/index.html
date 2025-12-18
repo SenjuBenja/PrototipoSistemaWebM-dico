@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultorio Dr.Miguel Bravo - Iniciar Sesión</title>
+  <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+  <div class="login-card">
+    <div class="logo">⌁</div>
+    <h2>Sistema de Gestión Médico</h2>
+    <p class="subtitle">Iniciar Sesión</p>
+
+    <form id="loginForm">
+      <label for="email">Correo Electrónico</label>
+      <div class="input-group">
+        <span class="icon">📧</span>
+        <input type="email" id="email" name="email" placeholder="doctor@gmail.com" required>
+      </div>
+
+      <label for="password">Contraseña</label>
+      <div class="input-group">
+        <span class="icon">🔒</span>
+        <input type="password" id="password" name="password" placeholder="••••••" required>
+      </div>
+
+      <a href="/pages/forgot.html" class="forgot">¿Olvidaste tu contraseña?</a>
+
+
+
+      <button type="submit" class="btn">Iniciar Sesión →</button>
+    </form>
+
+    <footer>
+      © 2025 Sistema Médico. Todos los derechos reservados.
+    </footer>
+  </div>
+
+  <script src="javascript/login.js"></script>
+</body>
+</html>

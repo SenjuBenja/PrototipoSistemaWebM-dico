@@ -1,0 +1,112 @@
+:root{
+  --text:#0f172a; --muted:#64748b; --muted2:#94a3b8;
+  --line:#e5e7eb; --bg:#f8fafc; --card:#ffffff;
+  --primary:#10b981; --primary-700:#0ea371; --primary-50:#eaf7ef;
+}
+
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.45 system-ui,Segoe UI,Roboto,Arial;color:var(--text);background:var(--bg)}
+a{color:#374151;text-decoration:none}
+
+.container{max-width:1100px;margin:24px auto;padding:0 16px}
+.title{font-size:28px;margin:10px 0 4px}
+.subtitle{margin:0 0 16px;color:var(--muted)}
+.muted{color:var(--muted2);font-size:14px}
+
+/* Topbar */
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;
+  background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;box-shadow:0 1px 6px rgba(0,0,0,.04)}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:28px;height:28px;border-radius:8px;background:var(--primary);display:grid;place-items:center}
+.brand-name{font-weight:700}
+.topnav a{margin:0 6px;padding:6px 10px;border-radius:8px;color:#374151}
+.topnav a:hover{background:#f3f4f6}
+.topnav a.active{background:var(--primary-50);color:var(--primary-700)}
+.nav-right{display:flex;align-items:center;gap:10px}
+
+/* Botones / estados */
+.btn{padding:10px 14px;border-radius:999px;border:0;background:var(--primary);color:#fff;font-weight:700;cursor:pointer}
+.btn:hover{filter:brightness(.95)}
+.btn-light{padding:8px 12px;border-radius:12px;border:1px solid var(--line);background:#fff;cursor:pointer}
+.btn-danger{background:#ef4444;color:#fff}
+.alert{margin:10px 0;padding:10px 12px;border-radius:10px;border:1px solid #fecaca;background:#fff1f2;color:#b91c1c}
+.hidden{display:none}
+
+/* Formulario */
+.form{max-width:760px;margin:12px 0 40px;padding:16px;background:var(--card);
+  border:1px solid var(--line);border-radius:14px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{display:flex;flex-direction:column;margin-bottom:12px}
+.field label{font-weight:600;margin-bottom:6px}
+.field input,.field select,.field textarea{
+  padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.actions{display:flex;gap:10px;justify-content:flex-end;margin-top:10px}
+
+/* Autocomplete */
+.searchbox{position:relative}
+.dropdown{position:absolute;left:0;right:0;top:100%;margin-top:6px;background:#fff;border:1px solid var(--line);
+  border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.06);max-height:260px;overflow:auto;display:none;z-index:30}
+.dropdown.show{display:block}
+.dropdown button{width:100%;text-align:left;padding:10px 12px;border:0;background:#fff;cursor:pointer}
+.dropdown button:hover{background:#f8fafc}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:#f1f5f9}
+/* Autocomplete mejorado */
+.dropdown{ font-size:14px }
+.dropdown .group{ padding:6px 10px; color:#94a3b8; font-weight:600 }
+.dropdown .item{ display:flex; flex-direction:column; gap:2px; padding:10px 12px; cursor:pointer }
+.dropdown .item:hover,
+.dropdown .item.active{ background:#f1f5f9 }
+.dropdown .title{ color:#0f172a; }
+.dropdown .sub{ color:#64748b; font-size:12px }
+mark{ background:transparent; color:#16a34a; font-weight:700 }
+
+
+/* === Ajustes del dropdown de pacientes === */
+#dropPac {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-height: 220px;
+  overflow-y: auto;
+  z-index: 50;
+  display: none;
+}
+
+#dropPac.show {
+  display: block;
+}
+
+#dropPac .item {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+#dropPac .item:hover,
+#dropPac .item.active {
+  background: #f1f5f9;
+}
+
+#dropPac .title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+#dropPac .sub {
+  font-size: 13px;
+  color: #64748b;
+}
+
+mark {
+  background: transparent;
+  color: #16a34a;
+  font-weight: 700;
+}

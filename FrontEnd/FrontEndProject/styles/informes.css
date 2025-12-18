@@ -1,0 +1,280 @@
+:root{
+  --text:#0f172a; --muted:#64748b; --muted2:#94a3b8;
+  --line:#e5e7eb; --bg:#f6f9fc; --card:#fff;
+  --primary:#10b981; --primary-700:#0ea271; --blue:#3b82f6;
+}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--text)}
+
+.container{max-width:1100px;margin:24px auto;padding:0 16px}
+.title{margin:6px 0 2px;font-size:32px}
+.subtitle{margin:0 0 16px;color:var(--muted)}
+.hidden{display:none}
+.row{display:flex;align-items:center}
+.gap{gap:10px}
+.loading-row{color:#8da0b3; padding:8px 0}
+
+/* Head */
+.head{display:flex;align-items:center;justify-content:space-between;margin:0 0 14px}
+
+/* Botones */
+.btn{padding:10px 14px;border-radius:999px;border:0;background:var(--primary);color:#fff;font-weight:700;cursor:pointer}
+.btn:hover{background:var(--primary-700)}
+.btn-primary{background:var(--primary)}
+.btn-secondary{background:var(--blue)}
+.btn-light{background:#eef2f6;color:#0f172a;font-weight:600}
+
+/* Tarjetas/Listado */
+.card{background:var(--card);border:1px solid #e8eef4;border-radius:14px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.stack{display:flex;flex-direction:column;gap:14px}
+.report-item{display:flex;align-items:flex-start;gap:14px;background:#fff;border:1px solid #e8eef4;border-radius:14px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.rep-ico{width:40px;height:40px;border-radius:12px;background:#e6f4ff;display:flex;align-items:center;justify-content:center;font-size:20px}
+.rep-title{font-weight:800;margin:0 0 4px}
+.rep-sub{color:var(--muted);margin:0 0 10px}
+.meta{display:flex;gap:12px;color:#8795a1;font-size:14px;align-items:center}
+.badge{background:#e6f2ff;color:#2563eb;border-radius:999px;padding:4px 8px;font-weight:700;font-size:12px}
+.rep-actions{margin-left:auto;display:flex;align-items:center;gap:8px}
+
+/* Formulario crear */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.col-2{grid-column:span 2}
+.field label{display:block;font-size:14px;color:#475569;margin-bottom:6px}
+.field input,.field select,.field textarea{
+  width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:#fff
+}
+.field textarea{resize:vertical}
+.actions{display:flex;justify-content:flex-end;gap:10px;margin-top:14px}
+.alert{margin-top:10px;padding:10px 12px;border-radius:10px;border:1px solid #fecaca;background:#fff1f2;color:#b91c1c}
+
+.empty{padding:20px;border:1px dashed #d7dee6;border-radius:12px;color:#9aa7b5;text-align:center}
+
+/* Detalle */
+.report{border-radius:14px}
+.report-head{display:flex;align-items:center;gap:12px}
+.report-icon{width:48px;height:48px;border-radius:14px;background:#22c55e;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px}
+.divider{border:0;border-top:1px solid #edf2f7;margin:14px 0}
+.report-title{margin:8px 0 10px}
+.report-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:6px 0 14px}
+.label{color:#6b7280;font-size:13px}
+.value{font-weight:800}
+.desc-box{background:#f8fafc;border:1px solid #e6eef7;border-radius:12px;padding:14px;margin-top:6px}
+.mt{margin-top:10px}
+
+/* Responsive */
+@media (max-width: 720px){
+  .grid{grid-template-columns:1fr}
+  .report-grid{grid-template-columns:1fr}
+}
+.topbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px 16px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.04);
+}
+
+.brand { display: flex; align-items: center; gap: 8px; }
+.logo { width: 28px; height: 28px; border-radius: 8px; background: #22c55e; color:#fff;
+        display:flex; align-items:center; justify-content:center; font-weight:700; }
+.brand-name { font-weight: 600; }
+
+.topnav a { margin: 0 8px; color: #374151; text-decoration: none; padding: 6px 10px; border-radius: 8px; }
+.topnav a.active { background: #eaf7ef; color: #16a34a; }
+.userbox { display:flex; align-items:center; gap:8px; }
+
+.container { max-width: 1100px; margin: 24px auto; padding: 0 16px; }
+
+/* === Topbar unificado (mismo look en todas las páginas) === */
+:root{
+  --text:#0f172a; --muted:#64748b; --muted2:#94a3b8;
+  --line:#e5e7eb; --bg:#f6f9fc; --card:#fff;
+  --primary:#10b981; --danger:#ef4444; --danger-700:#dc2626;
+}
+
+/* Tipografía y fondo consistentes */
+body{
+  margin:0;
+  font:16px/1.45 system-ui, Segoe UI, Roboto, Arial;
+  color:var(--text);
+  background:var(--bg);
+}
+
+/* Topbar */
+.topbar{
+  position: sticky; top:0; left:0; right:0; z-index:10;
+  display:flex; align-items:center; justify-content:space-between;
+  background:#fff; border-bottom:1px solid var(--line);
+  padding:10px 16px; box-shadow:0 1px 6px rgba(0,0,0,.04);
+}
+
+.brand{display:flex; align-items:center; gap:8px}
+.logo{width:28px; height:28px; border-radius:8px; background:#22c55e; color:#fff;
+      display:flex; align-items:center; justify-content:center; font-weight:700}
+.brand-name{font-weight:600}
+
+.topnav a{
+  margin:0 8px; color:#374151; text-decoration:none;
+  padding:6px 10px; border-radius:8px;
+}
+.topnav a.active{ background:#eaf7ef; color:#16a34a }
+
+.userbox{display:flex; align-items:center; gap:10px}
+.userbox__name{color:#9ca3af}  /* nombre del doctor en gris suave */
+
+/* Botones base + botón Salir rojo */
+.btn{ padding:10px 14px; border-radius:999px; border:0;
+      background:var(--primary); color:#fff; font-weight:700; cursor:pointer }
+.btn-small{ padding:8px 14px; font-weight:700 }
+.btn--logout{ background:var(--danger) }
+.btn--logout:hover{ background:var(--danger-700) }
+
+/* Contenedor de página */
+.container{ max-width:1100px; margin:24px auto; padding:0 16px }
+/* ========= LISTA DE INFORMES ========= */
+
+#listWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Tarjeta de informe */
+.report-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.04);
+}
+
+/* Parte izquierda (icono + textos) */
+.report-main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Icono */
+.report-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: #ecfdf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+/* Título del informe */
+.report-title {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Nombre del paciente */
+.report-patient {
+  margin: 0 0 4px;
+  color: var(--muted);
+}
+
+/* Fecha + modalidad */
+.report-meta {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted2);
+}
+
+/* Badge de modalidad (Consultorio, Virtual, etc.) */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #e0edff;
+  color: #1d4ed8;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Botón ojo (derecha) */
+.report-actions {
+  display: flex;
+  align-items: center;
+}
+
+.report-eye {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: filter 0.15s ease, transform 0.05s ease;
+}
+
+.report-eye:hover {
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+/* Botón peligro (Eliminar informe) */
+.btn-danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: var(--danger-700);
+}
+a {
+  text-decoration: none !important;
+}
+/* ===== Filtros de búsqueda en informes ===== */
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 16px;
+}
+
+.filters input[type="text"],
+.filters input[type="date"] {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  font-size: 0.95rem;
+}
+
+.filters input[type="text"] {
+  flex: 1;
+}
+
+@media (max-width: 720px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters button {
+    width: 100%;
+  }
+}

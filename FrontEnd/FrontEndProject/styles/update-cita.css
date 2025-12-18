@@ -1,0 +1,168 @@
+/* =============================
+   Página Update Cita
+   ============================= */
+
+.uc-page {
+  background: #f6f9fc;
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.uc-container {
+  max-width: 1100px;
+  margin: 32px auto 48px;
+  padding: 0 16px;
+}
+
+.uc-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 0 0 4px;
+}
+
+.uc-subtitle {
+  margin: 0 0 24px;
+  color: #6b7280;
+}
+
+/* Card */
+.uc-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 32px;
+  box-shadow: 0 8px 24px rgba(15,23,42,0.06);
+}
+
+/* Grid */
+.uc-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 24px;
+}
+
+.uc-col-2 {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 800px) {
+  .uc-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Campos */
+.uc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.uc-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.uc-field input,
+.uc-field select,
+.uc-field textarea {
+  padding: 11px 13px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.uc-field input:focus,
+.uc-field select:focus,
+.uc-field textarea:focus {
+  outline: none;
+  border-color: #10b981;
+  background: #ffffff;
+}
+
+/* Campo solo lectura para el nombre del paciente */
+.uc-readonly {
+  padding: 11px 13px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+/* Botones */
+.uc-actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* Botones exclusivos de esta página, no dependen de .btn */
+.uc-btn {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, transform 0.05s ease;
+}
+
+.uc-btn:active {
+  transform: translateY(1px);
+}
+
+.uc-btn-cancel {
+  background: #ffffff;
+  color: #111827;
+  border-color: #d1d5db;
+}
+
+.uc-btn-cancel:hover {
+  background: #f3f4f6;
+}
+
+.uc-btn-save {
+  background: #10b981;
+  color: #ffffff;
+  border-color: #10b981;
+}
+
+.uc-btn-save:hover {
+  background: #059669;
+}
+
+/* Alertita de error */
+.uc-alert {
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  background: #fee2e2;
+  border-radius: 10px;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.uc-hidden {
+  display: none !important;
+}
+/* Botón de eliminar (acción destructiva) */
+.uc-btn-danger {
+  background: #dc2626;        /* rojo fuerte */
+  color: #ffffff;
+  border-color: #dc2626;
+}
+
+.uc-btn-danger:hover {
+  background: #b91c1c;        /* rojo más oscuro */
+  border-color: #b91c1c;
+}
+
+.uc-btn-danger:active {
+  background: #991b1b;
+}

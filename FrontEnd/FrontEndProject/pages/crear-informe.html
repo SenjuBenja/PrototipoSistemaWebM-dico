@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crear Informe — Sistema Médico</title>
+  <link rel="stylesheet" href="../styles/crear-informe.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 64 64" fill="none">
+        <rect x="8" y="8" width="48" height="48" rx="12" fill="#10b981"/>
+        <path d="M32 18v28M18 32h28" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <span class="brand-name">Consultorio Dr. Miguel Bravo</span>
+  </div>
+
+  <nav class="topnav">
+    <a href="../pages/home.html">Dashboard</a>
+    <a href="../pages/pacientes.html">Pacientes</a>
+    <a href="../pages/agenda.html">Agenda</a>
+    <a href="../pages/informes.html" class="active">Informes</a>
+  </nav>
+
+  <div class="userbox">
+    <span id="userName" class="userbox__name">—</span>
+    <button id="btnLogout" class="btn btn-small btn--logout">Salir</button>
+  </div>
+</header>
+
+<main class="container">
+  <div class="head">
+    <h1 class="title">Crear Informe</h1>
+  </div>
+
+  <form id="frmReport" class="card" novalidate>
+    <div class="grid">
+      <!-- Selector de CITA -->
+<div class="field">
+  <label for="qCita">Cita</label>
+
+  <!-- Buscador de cita -->
+  <input
+    id="qCita"
+    type="text"
+    placeholder="Buscar por nombre del paciente (ej. Benjamín)…"
+  />
+  <small class="muted">
+    Al hacer clic se muestran las citas de esta semana. Escribe para buscar por nombre.
+  </small>
+
+  <!-- Select que se llena con los resultados -->
+  <select id="repCita" name="repCita" required>
+    <option value="">Seleccionar cita (paciente • modalidad • fecha)</option>
+  </select>
+</div>
+
+
+      <div class="field">
+      <label for="repFecha">Fecha del Informe</label>
+      <input id="repFecha" name="repFecha" type="date" disabled />
+      <small class="muted">La fecha se asigna automáticamente al crear el informe.</small>
+    </div>
+
+
+      <div class="field col-2">
+        <label for="repDescripcion">Descripción</label>
+        <textarea id="repDescripcion" name="repDescripcion" rows="8"
+          placeholder="Ingrese los detalles del informe médico…" required></textarea>
+      </div>
+    </div>
+
+    <div id="boxError" class="alert hidden"></div>
+
+    <div class="actions">
+      <a href="../pages/informes.html" class="btn btn-light">Cancelar</a>
+      <button type="submit" class="btn">Guardar Informe</button>
+    </div>
+  </form>
+</main>
+
+<script src="../javascript/crear-informe.js" defer></script>
+</body>
+</html>

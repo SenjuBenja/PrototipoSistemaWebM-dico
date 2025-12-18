@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Actualizar Cita — Sistema Médico</title>
+
+  <!-- Topbar / estilos generales -->
+  <link rel="stylesheet" href="../styles/login.css">
+  <link rel="stylesheet" href="../styles/home.css">
+
+  <!-- Estilo propio de esta pantalla -->
+  <link rel="stylesheet" href="../styles/update-cita.css">
+</head>
+
+<body class="uc-page">
+
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">
+      <svg viewBox="0 0 64 64" fill="none"
+           stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="32" cy="9" r="4" fill="currentColor" stroke="none"/>
+        <path d="M32 18C22 13 17 13 8 18c6 3 12 4 24 4" />
+        <path d="M32 18c10-5 15-5 24 0-6 3-12 4-24 4" />
+        <path d="M32 22v34" />
+        <path d="M32 26c-6 0-8 4-4 6 3 2 8 2 8 6s-6 4-10 2" />
+        <path d="M32 26c6 0 8 4 4 6-3 2-8 2-8 6s6 4 10 2" />
+        <path d="M32 56v6" />
+      </svg>
+    </div>
+    <span class="brand-name">Consultorio Dr. Miguel Bravo</span>
+  </div>
+
+  <nav class="topnav">
+    <a href="../pages/home.html">Dashboard</a>
+    <a href="../pages/pacientes.html">Pacientes</a>
+    <a href="../pages/agenda.html" class="active">Agenda</a>
+    <a href="../pages/informes.html">Informes</a>
+  </nav>
+
+  <div class="nav-right">
+    <span id="userShort" class="muted"></span>
+    <button id="btnLogout" class="btn btn-danger">Salir</button>
+  </div>
+</header>
+
+<main class="uc-container">
+  <h1 class="uc-title">Actualizar Cita</h1>
+  <p class="uc-subtitle">Modifica la información de la cita seleccionada</p>
+
+  <div id="boxError" class="uc-alert uc-hidden"></div>
+
+  <form id="frmCita" class="uc-card" novalidate>
+    <div class="uc-grid-2">
+      <div class="uc-field">
+        <label>Paciente</label>
+        <div id="lblPaciente" class="uc-readonly"></div>
+      </div>
+
+      <div class="uc-field">
+        <label for="ucFecha">Fecha</label>
+        <input id="ucFecha" type="date" required />
+      </div>
+
+      <div class="uc-field">
+        <label for="ucHora">Hora</label>
+        <input id="ucHora" type="time" required />
+      </div>
+
+      <div class="uc-field">
+        <label for="ucModalidad">Modalidad</label>
+        <select id="ucModalidad" required>
+          <option value="">Selecciona...</option>
+          <option value="Consultorio">Consultorio</option>
+          <option value="Domicilio">Domicilio</option>
+          <option value="Virtual">Virtual</option>
+        </select>
+      </div>
+
+      <div class="uc-field uc-col-2">
+        <label for="ucMotivo">Motivo de la cita</label>
+        <textarea id="ucMotivo" rows="3"
+          placeholder="Ej. Chequeo general, control post consulta, tratamiento…"></textarea>
+      </div>
+    </div>
+
+    <div class="uc-actions">
+  <button type="button" id="btnEliminar" class="uc-btn uc-btn-danger">
+    Eliminar Cita
+  </button>
+
+  <button type="button" id="btnCancelar" class="uc-btn uc-btn-cancel">
+    Cancelar
+  </button>
+
+  <button type="submit" class="uc-btn uc-btn-save">
+    Guardar Cambios
+  </button>
+</div>
+
+  </form>
+</main>
+
+<script src="../javascript/update-cita.js" defer></script>
+</body>
+</html>

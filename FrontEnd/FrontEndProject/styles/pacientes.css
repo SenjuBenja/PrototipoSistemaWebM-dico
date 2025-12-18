@@ -1,0 +1,56 @@
+:root{
+  --text:#0f172a; --muted:#64748b; --muted2:#94a3b8;
+  --line:#e5e7eb; --primary:#10b981; --danger:#ef4444;
+  --bg:#f8fafc; --card:#ffffff;
+}
+
+/* Base */
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.45 system-ui,Segoe UI,Roboto,Arial;color:var(--text);background:var(--bg)}
+a{color:#334155;text-decoration:none;padding:8px 10px;border-radius:10px}
+a.active{background:#eaf7ef;color:#16a34a;font-weight:600}
+
+/* Usamos el mismo contenedor del Home */
+.container{max-width:1100px;margin:24px auto;padding:0 16px}
+
+/* Títulos y textos */
+.muted{color:var(--muted2);font-size:14px}
+.title{font-size:32px;margin:6px 0 2px}
+.subtitle{margin:0 0 16px;color:var(--muted)}
+
+/* Toolbar */
+.toolbar{display:flex;gap:12px;align-items:center;justify-content:space-between;margin:16px 0}
+.toolbar-right{display:flex;gap:8px}
+.input{width:100%;max-width:560px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.select{padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.btn{padding:10px 14px;border-radius:999px;border:0;background:var(--primary);color:#fff;font-weight:600;cursor:pointer}
+.btn-danger{background:var(--danger)}
+.btn:disabled{opacity:.6;cursor:not-allowed}
+
+/* Tabla “tarjeteada” */
+.table{width:100%;border-collapse:separate;border-spacing:0 10px}
+.thead th{font-size:12px;color:#94a3b8;text-align:left;padding:6px 12px}
+.row{background:var(--card);border-radius:12px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.row td{padding:14px 12px;border-top:1px solid #f1f5f9;border-bottom:1px solid #f1f5f9;vertical-align:middle}
+
+/* Chips y helpers */
+.id-badge{width:36px;height:36px;border-radius:999px;background:#e9f5ff;color:#0ea5e9;display:flex;align-items:center;justify-content:center;font-weight:700;margin-right:10px}
+.flex{display:flex;align-items:center}
+.badge{padding:4px 8px;border-radius:999px;background:#eaf2ff;color:#2563eb;font-size:12px;font-weight:600}
+.badge.m{background:#e8f6ef;color:#059669}
+.badge.f{background:#fde8f3;color:#db2777}
+
+/* Estados */
+.alert{padding:12px 14px;border-radius:12px;background:#fff1f2;color:#b91c1c;border:1px solid #fecaca;margin-bottom:10px}
+.empty{padding:24px 8px;color:#94a3b8}
+.loading .skeleton{height:54px;background:linear-gradient(90deg,#f3f4f6,#e5e7eb,#f3f4f6);background-size:200% 100%;animation:sh 1.2s infinite;border-radius:12px;margin:8px 0}
+@keyframes sh{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.hidden{display:none}
+
+td.email{white-space:nowrap;max-width:220px;overflow:hidden;text-overflow:ellipsis}
+td.dir{max-width:300px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* --- Importante ---
+   Quitamos estilos de la barra vieja (.nav, .nav-left, .nav-right, .brand)
+   porque ahora el topbar viene del CSS del Home (home.css).
+*/

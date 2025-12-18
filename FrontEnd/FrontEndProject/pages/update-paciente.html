@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Actualizar Paciente — Sistema Médico</title>
+
+  <!-- ESTILOS NECESARIOS PARA TOPBAR -->
+  <link rel="stylesheet" href="../styles/login.css">
+  <link rel="stylesheet" href="../styles/home.css">
+  <link rel="stylesheet" href="../styles/pacientes.css">
+
+  <!-- Estilo propio de esta pantalla -->
+  <link rel="stylesheet" href="../styles/update-paciente.css">
+</head>
+
+<body class="update-page">
+
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">
+      <svg viewBox="0 0 64 64" fill="none"
+           stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="32" cy="9" r="4" fill="currentColor" stroke="none"/>
+        <path d="M32 18C22 13 17 13 8 18c6 3 12 4 24 4" />
+        <path d="M32 18c10-5 15-5 24 0-6 3-12 4-24 4" />
+        <path d="M32 22v34" />
+        <path d="M32 26c-6 0-8 4-4 6 3 2 8 2 8 6s-6 4-10 2" />
+        <path d="M32 26c6 0 8 4 4 6-3 2-8 2-8 6s6 4 10 2" />
+        <path d="M32 56v6" />
+      </svg>
+    </div>
+    <span class="brand-name">Consultorio Dr. Miguel Bravo</span>
+  </div>
+
+  <nav class="topnav">
+    <a href="../pages/home.html">Dashboard</a>
+    <a href="../pages/pacientes.html" class="active">Pacientes</a>
+    <a href="../pages/agenda.html">Agenda</a>
+    <a href="../pages/informes.html">Informes</a>
+  </nav>
+
+  <div class="nav-right">
+    <span id="userShort" class="muted"></span>
+    <button id="btnLogout" class="btn btn-danger">Salir</button>
+  </div>
+</header>
+
+<main class="container">
+  <h1 class="title">Actualizar Paciente</h1>
+  <p class="subtitle">Modifica los datos del paciente seleccionado</p>
+
+  <div id="boxError" class="alert hidden"></div>
+
+  <form id="frmPaciente" class="card large" novalidate>
+    <div class="grid-2">
+      <div class="field">
+        <label for="inpNombre">Nombre</label>
+        <input id="inpNombre" type="text" required />
+      </div>
+      <div class="field">
+        <label for="inpApellido">Apellido</label>
+        <input id="inpApellido" type="text" required />
+      </div>
+
+      <div class="field">
+        <label for="inpCedula">Cédula</label>
+        <input id="inpCedula" type="text" required />
+      </div>
+      <div class="field">
+        <label for="inpSexo">Sexo</label>
+        <select id="inpSexo" required>
+          <option value="">Selecciona...</option>
+          <option value="1">Masculino</option>
+          <option value="2">Femenino</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="inpFechaNac">Fecha de nacimiento</label>
+        <input id="inpFechaNac" type="date" />
+      </div>
+      <div class="field">
+        <label for="inpTelefono">Teléfono</label>
+        <input id="inpTelefono" type="text" />
+      </div>
+
+      <div class="field">
+        <label for="inpEmail">Email</label>
+        <input id="inpEmail" type="email" />
+      </div>
+      <div class="field">
+        <label for="inpDireccion">Dirección</label>
+        <input id="inpDireccion" type="text" />
+      </div>
+    </div>
+<div class="update-actions">
+  <button type="button" id="btnEliminar" class="up-btn up-btn-danger">
+    Eliminar Paciente
+  </button>
+
+  <button type="button" id="btnCancelar" class="up-btn up-btn-cancel">
+    Cancelar
+  </button>
+
+  <button type="submit" class="up-btn up-btn-save">
+    Guardar Cambios
+  </button>
+</div>
+
+
+
+
+  </form>
+</main>
+
+<script src="../javascript/update-paciente.js" defer></script>
+</body>
+</html>

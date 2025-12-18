@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistema Médico — Informes</title>
+  <link rel="stylesheet" href="../styles/informes.css" />
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none">
+          <rect x="8" y="8" width="48" height="48" rx="12" fill="#10b981"/>
+          <path d="M32 18v28M18 32h28" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="brand-name">Consultorio Dr. Miguel Bravo</span>
+    </div>
+
+    <nav class="topnav">
+      <a href="../pages/home.html">Dashboard</a>
+      <a href="../pages/pacientes.html">Pacientes</a>
+      <a href="../pages/agenda.html">Agenda</a>
+      <a href="../pages/informes.html" class="active">Informes</a>
+    </nav>
+
+  <div class="userbox">
+    <span id="userName" class="userbox__name">—</span>
+    <button id="btnLogout" class="btn btn-small btn--logout">Salir</button>
+  </div>
+  </header>
+
+  <main class="container">
+    <!-- LISTA -->
+        <!-- LISTA -->
+    <section id="view-list" class="view">
+      <div class="head">
+        <div>
+          <h1 class="title">Informes Médicos</h1>
+          <p class="subtitle">Gestiona los informes de tus pacientes</p>
+        </div>
+        <a href="../pages/crear-informe.html" class="btn btn-primary">+ Nuevo Informe</a>
+      </div>
+
+      <!-- 🔍 Filtros de búsqueda -->
+      <div class="filters">
+        <input
+          id="fPaciente"
+          type="text"
+          placeholder="Buscar por paciente..."
+        />
+        <input
+          id="fFecha"
+          type="date"
+        />
+        <button id="btnBuscar" class="btn btn-light">Buscar</button>
+        <button id="btnLimpiar" class="btn btn-light">Limpiar</button>
+      </div>
+
+      <div id="listWrapper" class="stack"></div>
+      <div id="emptyList" class="empty hidden">No hay informes.</div>
+      <div id="listLoading" class="loading-row">Cargando…</div>
+      <div id="listError" class="alert hidden"></div>
+    </section>
+
+
+    <!-- CREAR -->
+    <section id="view-create" class="view hidden">
+      <div class="head">
+        <h2 class="title">Crear Informe</h2>
+        <button class="btn btn-light" data-action="backToList">Cancelar</button>
+      </div>
+
+      <form id="frmReport" class="card" novalidate>
+        <div class="grid">
+          <!-- Campo: Cita (con búsqueda y alcance) -->
+          <div class="field">
+            <label for="repCita">Cita</label>
+
+            <!-- Controles para filtrar las citas -->
+            <div class="row" style="display:flex; gap:12px; align-items:center; margin:8px 0 10px">
+              <input id="qCita" type="text" placeholder="Buscar por paciente o motivo..." style="flex:1" />
+              <select id="scopeCita" style="width:200px">
+                <option value="todos">Todos</option>
+                <option value="hoy">Hoy</option>
+                <option value="semana">Esta semana</option>
+              </select>
+            </div>
+
+            <select id="repCita" name="repCita" required>
+              <option value="">Seleccionar cita (paciente • motivo • fecha)</option>
+            </select>
+            <small class="muted">Usa el buscador para encontrar la cita del paciente y completar el informe.</small>
+          </div>
+
+          <div class="field">
+            <label for="repFecha">Fecha del Informe</label>
+            <input id="repFecha" name="repFecha" type="date" required />
+          </div>
+
+          <div class="field col-2">
+            <label for="repDescripcion">Descripción</label>
+            <textarea id="repDescripcion" name="repDescripcion" rows="6"
+              placeholder="Ingrese los detalles del informe médico..." required></textarea>
+          </div>
+        </div>
+
+        <div id="boxCreateError" class="alert hidden"></div>
+
+        <div class="actions">
+          <button type="button" class="btn btn-light" data-action="backToList">Cancelar</button>
+          <button type="submit" class="btn">Guardar Informe</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- DETALLE -->
+    <section id="view-detail" class="view hidden">
+      <div class="head">
+        <h2 class="title">Ver Informe</h2>
+        <div class="row gap">
+          <button class="btn btn-light" data-action="print">Imprimir</button>
+          <button class="btn btn-danger" data-action="delete">Eliminar</button>
+          <button class="btn btn-light" data-action="backToList">Cerrar</button>
+        </div>
+      </div>
+
+      <article class="report card">
+        <header class="report-head">
+          <div class="report-icon">📄</div>
+          <div>
+            <h3 class="brand-name">Consultorio Dr. Miguel Bravo</h3>
+            <small class="muted">Sistema de Gestión Médica</small>
+          </div>
+        </header>
+
+        <hr class="divider">
+
+        <h3 id="dTitulo" class="report-title">—</h3>
+
+        <div class="report-grid">
+          <div>
+            <div class="label">Paciente</div>
+            <div id="dPaciente" class="value">—</div>
+          </div>
+          <div>
+            <div class="label">Fecha</div>
+            <div id="dFecha" class="value">—</div>
+          </div>
+          <div>
+            <div class="label">Modalidad</div>
+            <div id="dModalidad" class="value">—</div>
+          </div>
+          <div>
+            <div class="label">Motivo</div>
+            <div id="dMotivo" class="value">—</div>
+          </div>
+        </div>
+
+        <div class="label mt">Descripción</div>
+        <div id="dDescripcion" class="desc-box"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="../javascript/informes.js" defer></script>
+</body>
+</html>

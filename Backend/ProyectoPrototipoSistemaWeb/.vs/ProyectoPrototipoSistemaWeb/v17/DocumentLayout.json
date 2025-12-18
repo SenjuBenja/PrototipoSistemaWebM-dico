@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|c:\\users\\benji\\source\\repos\\proyectoprototiposistemaweb\\proyectoprototiposistemaweb\\endpoints\\medicoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|solutionrelative:proyectoprototiposistemaweb\\endpoints\\medicoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|c:\\users\\benji\\source\\repos\\proyectoprototiposistemaweb\\proyectoprototiposistemaweb\\endpoints\\citaendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|solutionrelative:proyectoprototiposistemaweb\\endpoints\\citaendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|c:\\users\\benji\\source\\repos\\proyectoprototiposistemaweb\\proyectoprototiposistemaweb\\endpoints\\dashboardendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|solutionrelative:proyectoprototiposistemaweb\\endpoints\\dashboardendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|c:\\users\\benji\\source\\repos\\proyectoprototiposistemaweb\\proyectoprototiposistemaweb\\endpoints\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|solutionrelative:proyectoprototiposistemaweb\\endpoints\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|c:\\users\\benji\\source\\repos\\proyectoprototiposistemaweb\\proyectoprototiposistemaweb\\data\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|solutionrelative:proyectoprototiposistemaweb\\data\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|c:\\users\\benji\\source\\repos\\proyectoprototiposistemaweb\\proyectoprototiposistemaweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|solutionrelative:proyectoprototiposistemaweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|c:\\users\\benji\\source\\repos\\proyectoprototiposistemaweb\\proyectoprototiposistemaweb\\endpoints\\pacientesendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|solutionrelative:proyectoprototiposistemaweb\\endpoints\\pacientesendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|c:\\users\\benji\\source\\repos\\proyectoprototiposistemaweb\\proyectoprototiposistemaweb\\data\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|solutionrelative:proyectoprototiposistemaweb\\data\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|c:\\users\\benji\\source\\repos\\proyectoprototiposistemaweb\\proyectoprototiposistemaweb\\endpoints\\informesendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|solutionrelative:proyectoprototiposistemaweb\\endpoints\\informesendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|c:\\users\\benji\\source\\repos\\proyectoprototiposistemaweb\\proyectoprototiposistemaweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D88DE350-0F83-420D-96EC-FF5D4F0FBDD5}|ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb.csproj|solutionrelative:proyectoprototiposistemaweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthEndPoints.cs",
+              "DocumentMoniker": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\EndPoints\\AuthEndPoints.cs",
+              "RelativeDocumentMoniker": "ProyectoPrototipoSistemaWeb\\EndPoints\\AuthEndPoints.cs",
+              "ToolTip": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\EndPoints\\AuthEndPoints.cs",
+              "RelativeToolTip": "ProyectoPrototipoSistemaWeb\\EndPoints\\AuthEndPoints.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAzwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T20:41:22.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CitaEndPoints.cs",
+              "DocumentMoniker": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\EndPoints\\CitaEndPoints.cs",
+              "RelativeDocumentMoniker": "ProyectoPrototipoSistemaWeb\\EndPoints\\CitaEndPoints.cs",
+              "ToolTip": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\EndPoints\\CitaEndPoints.cs",
+              "RelativeToolTip": "ProyectoPrototipoSistemaWeb\\EndPoints\\CitaEndPoints.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAowNcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:06:23.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "ProyectoPrototipoSistemaWeb\\appsettings.json",
+              "ToolTip": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\appsettings.json",
+              "RelativeToolTip": "ProyectoPrototipoSistemaWeb\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-11T02:38:21.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\Program.cs",
+              "RelativeDocumentMoniker": "ProyectoPrototipoSistemaWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\Program.cs",
+              "RelativeToolTip": "ProyectoPrototipoSistemaWeb\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T02:28:06.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MedicoEndPoints.cs",
+              "DocumentMoniker": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\EndPoints\\MedicoEndPoints.cs",
+              "RelativeDocumentMoniker": "ProyectoPrototipoSistemaWeb\\EndPoints\\MedicoEndPoints.cs",
+              "ToolTip": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\EndPoints\\MedicoEndPoints.cs",
+              "RelativeToolTip": "ProyectoPrototipoSistemaWeb\\EndPoints\\MedicoEndPoints.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAIwHgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T17:58:09.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashboardEndPoints.cs",
+              "DocumentMoniker": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\EndPoints\\DashboardEndPoints.cs",
+              "RelativeDocumentMoniker": "ProyectoPrototipoSistemaWeb\\EndPoints\\DashboardEndPoints.cs",
+              "ToolTip": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\EndPoints\\DashboardEndPoints.cs",
+              "RelativeToolTip": "ProyectoPrototipoSistemaWeb\\EndPoints\\DashboardEndPoints.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACAAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T21:53:30.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Paciente.cs",
+              "DocumentMoniker": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\Data\\Paciente.cs",
+              "RelativeDocumentMoniker": "ProyectoPrototipoSistemaWeb\\Data\\Paciente.cs",
+              "ToolTip": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\Data\\Paciente.cs",
+              "RelativeToolTip": "ProyectoPrototipoSistemaWeb\\Data\\Paciente.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAIwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T03:29:43.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Medico.cs",
+              "DocumentMoniker": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\Data\\Medico.cs",
+              "RelativeDocumentMoniker": "ProyectoPrototipoSistemaWeb\\Data\\Medico.cs",
+              "ToolTip": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\Data\\Medico.cs",
+              "RelativeToolTip": "ProyectoPrototipoSistemaWeb\\Data\\Medico.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAA+wCoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T20:41:37.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PacientesEndPoints.cs",
+              "DocumentMoniker": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\EndPoints\\PacientesEndPoints.cs",
+              "RelativeDocumentMoniker": "ProyectoPrototipoSistemaWeb\\EndPoints\\PacientesEndPoints.cs",
+              "ToolTip": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\EndPoints\\PacientesEndPoints.cs",
+              "RelativeToolTip": "ProyectoPrototipoSistemaWeb\\EndPoints\\PacientesEndPoints.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAowFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T17:28:39.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InformesEndPoints.cs",
+              "DocumentMoniker": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\EndPoints\\InformesEndPoints.cs",
+              "RelativeDocumentMoniker": "ProyectoPrototipoSistemaWeb\\EndPoints\\InformesEndPoints.cs",
+              "ToolTip": "C:\\Users\\benji\\source\\repos\\ProyectoPrototipoSistemaWeb\\ProyectoPrototipoSistemaWeb\\EndPoints\\InformesEndPoints.cs",
+              "RelativeToolTip": "ProyectoPrototipoSistemaWeb\\EndPoints\\InformesEndPoints.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAowF4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T18:07:08.676Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

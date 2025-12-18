@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistema Médico — Nuevo Paciente</title>
+  <link rel="stylesheet" href="../styles/paciente-nuevo.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+  <div class="logo">
+    <svg viewBox="0 0 64 64" fill="none"
+         stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="9" r="4" fill="currentColor" stroke="none"/>
+      <path d="M32 18C22 13 17 13 8 18c6 3 12 4 24 4" />
+      <path d="M32 18c10-5 15-5 24 0-6 3-12 4-24 4" />
+      <path d="M32 22v34" />
+      <path d="M32 26c-6 0-8 4-4 6 3 2 8 2 8 6s-6 4-10 2" />
+      <path d="M32 26c6 0 8 4 4 6-3 2-8 2-8 6s6 4 10 2" />
+      <path d="M32 56v6" />
+    </svg>
+  </div>
+  <span class="brand-name">Consultorio Dr. Miguel Bravo</span>
+</div>
+
+    <nav class="topnav">
+      <a href="../pages/home.html">Dashboard</a>
+      <a href="../pages/pacientes.html">Pacientes</a>
+      <a href="../pages/agenda.html">Agenda</a>
+      <a href="../pages/informes.html" class="active">Informes</a>
+    </nav>
+      <div class="nav-right">
+        <span id="userShort" class="muted"></span>
+        <button id="btnLogout" class="btn btn-danger">Salir</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="title">Nuevo Paciente</h1>
+    <p class="subtitle">Registra los datos del paciente</p>
+
+    <form id="frmPaciente" novalidate class="card">
+      <div class="grid">
+        <div class="field">
+          <label for="pacienteNombre">Nombre</label>
+          <input id="pacienteNombre" name="pacienteNombre" type="text" required maxlength="80" />
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="pacienteApellido">Apellido</label>
+          <input id="pacienteApellido" name="pacienteApellido" type="text" required maxlength="80" />
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="pacienteCedula">Cédula</label>
+          <input id="pacienteCedula" name="pacienteCedula" type="text" required maxlength="20" />
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="sexoId">Sexo</label>
+          <select id="sexoId" name="sexoId" required>
+            <option value="" selected>Selecciona…</option>
+            <option value="1">Masculino</option>
+            <option value="2">Femenino</option>
+          </select>
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="pacienteFechaNacimiento">Fecha de nacimiento</label>
+          <input id="pacienteFechaNacimiento" name="pacienteFechaNacimiento" type="date" required />
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="pacienteTelefono">Teléfono</label>
+          <input id="pacienteTelefono" name="pacienteTelefono" type="tel" maxlength="20" />
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="pacienteEmail">Email</label>
+          <input id="pacienteEmail" name="pacienteEmail" type="email" />
+          <small class="error"></small>
+        </div>
+
+        <div class="field col-2">
+          <label for="pacienteDireccion">Dirección</label>
+          <input id="pacienteDireccion" name="pacienteDireccion" type="text" maxlength="200" />
+          <small class="error"></small>
+        </div>
+      </div>
+
+      <div id="boxError" class="alert hidden"></div>
+      <div id="boxOk" class="alert ok hidden"></div>
+
+      <div class="actions">
+        <a href="./pacientes.html" class="btn btn-light">Cancelar</a>
+        <button id="btnSave" type="submit" class="btn">Guardar</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="../javascript/paciente-nuevo.js" defer></script>
+</body>
+</html>

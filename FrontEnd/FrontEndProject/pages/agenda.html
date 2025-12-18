@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistema Médico — Agenda</title>
+  <link rel="stylesheet" href="../styles/agenda.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+  <div class="logo">
+    <svg viewBox="0 0 64 64" fill="none"
+         stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="9" r="4" fill="currentColor" stroke="none"/>
+      <path d="M32 18C22 13 17 13 8 18c6 3 12 4 24 4" />
+      <path d="M32 18c10-5 15-5 24 0-6 3-12 4-24 4" />
+      <path d="M32 22v34" />
+      <path d="M32 26c-6 0-8 4-4 6 3 2 8 2 8 6s-6 4-10 2" />
+      <path d="M32 26c6 0 8 4 4 6-3 2-8 2-8 6s6 4 10 2" />
+      <path d="M32 56v6" />
+    </svg>
+  </div>
+  <span class="brand-name">Consultorio Dr. Miguel Bravo</span>
+</div>
+
+    <nav class="topnav">
+      <a href="../pages/home.html">Dashboard</a>
+      <a href="../pages/pacientes.html">Pacientes</a>
+      <a href="../pages/agenda.html" class="active">Agenda</a>
+      <a href="../pages/informes.html" >Informes</a>
+    </nav>
+      <div class="nav-right">
+        <span id="userShort" class="muted"></span>
+        <button id="btnLogout" class="btn btn-danger">Salir</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="title">Agenda de Citas</h1>
+    <p class="subtitle">Gestiona tus citas de la semana</p>
+
+    <div class="toolbar">
+      <div class="calendar-title">
+        <span id="lblMes"></span>
+      </div>
+      <div class="toolbar-right">
+        <button id="btnPrev" class="btn-light" title="Semana anterior">⟨</button>
+        <button id="btnToday" class="btn-light">Hoy</button>
+        <button id="btnNext" class="btn-light" title="Siguiente semana">⟩</button>
+        <button id="btnNew" class="btn">+ Nueva Cita</button>
+      </div>
+    </div>
+
+    <div id="boxError" class="alert hidden"></div>
+
+    <div id="grid" class="week-grid">
+      <!-- header fechas -->
+      <div class="corner"></div>
+      <div class="day-head" id="d0"></div>
+      <div class="day-head" id="d1"></div>
+      <div class="day-head" id="d2"></div>
+      <div class="day-head" id="d3"></div>
+      <div class="day-head" id="d4"></div>
+      <div class="day-head" id="d5"></div>
+      <div class="day-head" id="d6"></div>
+      <!-- filas de horas y celdas se generan por JS -->
+    </div>
+  </main>
+
+  <script src="../javascript/agenda.js" defer></script>
+</body>
+</html>

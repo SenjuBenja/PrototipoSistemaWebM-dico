@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistema Médico — Nueva Cita</title>
+  <link rel="stylesheet" href="../styles/cita-nueva.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <!-- Logo médico minimal -->
+        <svg width="28" height="28" viewBox="0 0 64 64" fill="none">
+          <rect x="8" y="8" width="48" height="48" rx="12" fill="#10b981"/>
+          <path d="M32 18v28M18 32h28" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="brand-name">Consultorio Dr. Miguel Bravo</span>
+    </div>
+
+    <nav class="topnav">
+      <a href="../pages/home.html">Dashboard</a>
+      <a href="../pages/pacientes.html">Pacientes</a>
+      <a href="../pages/agenda.html" class="active">Agenda</a>
+      <a href="../pages/informes.html">Informes</a>
+    </nav>
+
+    <div class="nav-right">
+      <span id="userShort" class="muted"></span>
+      <button id="btnLogout" class="btn btn-danger">Salir</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="title">Nueva Cita</h1>
+    <p class="subtitle">Crea una cita para un paciente existente.</p>
+
+    <div id="boxError" class="alert hidden"></div>
+
+    <form id="frm" class="form">
+      <!-- Paciente -->
+      <div class="field searchbox">
+        <label for="qPaciente">Paciente</label>
+        <input id="qPaciente" type="text" placeholder="Busca por nombre o cédula" autocomplete="off" />
+        <div id="dropPac" class="dropdown" role="listbox" aria-label="Resultados de pacientes"></div>
+        <small id="selInfo" class="muted">Sin paciente seleccionado</small>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="inpFecha">Fecha</label>
+          <input id="inpFecha" type="date" required />
+        </div>
+        <div class="field">
+          <label for="inpHora">Hora</label>
+          <input id="inpHora" type="time" required step="300" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="inpModalidad">Modalidad</label>
+          <select id="inpModalidad" required>
+            <option value="Consultorio">Consultorio</option>
+            <option value="Virtual">Virtual</option>
+            <option value="Domicilio">Domicilio</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="inpMotivo">Motivo</label>
+          <input id="inpMotivo" type="text" placeholder="Breve descripción" required />
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="btn-light" href="./agenda.html">⟵ Regresar a Agenda</a>
+        <a class="btn-light" href="./home.html">Ir al Dashboard</a>
+        <button class="btn" type="submit">Guardar Cita</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="../javascript/cita-nueva.js" defer></script>
+</body>
+</html>

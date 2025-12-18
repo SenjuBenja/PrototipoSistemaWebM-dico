@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Home - Sistema Médico</title>
+  <link rel="stylesheet" href="../styles/home.css">
+</head>
+
+<body>
+  
+    <header class="topbar">
+    <div class="brand">
+  <div class="logo">
+    <svg viewBox="0 0 64 64" fill="none"
+         stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="9" r="4" fill="currentColor" stroke="none"/>
+      <path d="M32 18C22 13 17 13 8 18c6 3 12 4 24 4" />
+      <path d="M32 18c10-5 15-5 24 0-6 3-12 4-24 4" />
+      <path d="M32 22v34" />
+      <path d="M32 26c-6 0-8 4-4 6 3 2 8 2 8 6s-6 4-10 2" />
+      <path d="M32 26c6 0 8 4 4 6-3 2-8 2-8 6s6 4 10 2" />
+      <path d="M32 56v6" />
+    </svg>
+  </div>
+  <span class="brand-name">Consultorio Dr. Miguel Bravo</span>
+</div>
+
+
+    <nav class="topnav">
+      <a href="../pages/home.html" class="active">Dashboard</a>
+      <a href="../pages/pacientes.html">Pacientes</a>
+      <a href="../pages/agenda.html">Agenda</a>
+      <a href="../pages/informes.html">Informes</a>
+    </nav>
+      <div class="nav-right">
+        <span id="userShort" class="muted"></span>
+        <button id="btnLogout" class="btn btn-danger">Salir</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Dashboard</h2>
+    <p class="muted" id="welcome">Cargando…</p>
+
+    <!-- tarjetas -->
+    <section class="cards">
+      <article class="card">
+        <div class="card-icon">📆</div>
+        <div>
+          <p class="card-title">Citas de esta semana</p>
+          <h3 id="kpiCitas">—</h3>
+          <small class="hint" id="kpiSemana">Semana —</small>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🧑‍⚕️</div>
+        <div>
+          <p class="card-title">Pacientes nuevos</p>
+          <h3 id="kpiPacientes">—</h3>
+          <small class="hint">Últimos 7 días</small>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📝</div>
+        <div>
+          <p class="card-title">Informes recientes</p>
+          <h3 id="kpiInformes">—</h3>
+          <small class="hint">Últimos 7 días</small>
+        </div>
+      </article>
+    </section>
+
+    <!-- lista breve de citas de la semana -->
+    <section class="panel">
+      <div class="panel-head">
+        <h3>Citas de esta semana</h3>
+        <a href="../pages/agenda.html" class="link">Ver Agenda</a>
+      </div>
+      <ul id="listCitas" class="items"></ul>
+    </section>
+
+    <!-- accesos rápidos -->
+    <section class="panel">
+      <h3>Accesos Rápidos</h3>
+      <div class="quick">
+        <a class="quick-item" href="../pages/pacientes.html">
+          <div>👥</div><span>Pacientes</span>
+        </a>
+        <a class="quick-item" href="../pages/agenda.html">
+          <div>🗓️</div><span>Agenda</span>
+        </a>
+        <a class="quick-item" href="../pages/informes.html">
+          <div>📄</div><span>Informes</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../javascript/home.js"></script>
+
+</body>
+</html>

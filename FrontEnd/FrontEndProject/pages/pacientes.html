@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistema Médico — Pacientes</title>
+
+  <!-- Reutilizamos los estilos comunes del Home para el topbar -->
+  <link rel="stylesheet" href="../styles/login.css">
+  <link rel="stylesheet" href="../styles/home.css">
+  <!-- Estilos específicos de esta página -->
+  <link rel="stylesheet" href="../styles/pacientes.css" />
+</head>
+<body>
+
+  <!-- TOPBAR unificado (igual al Home) -->
+  <header class="topbar">
+    <div class="brand">
+  <div class="logo">
+    <svg viewBox="0 0 64 64" fill="none"
+         stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="9" r="4" fill="currentColor" stroke="none"/>
+      <path d="M32 18C22 13 17 13 8 18c6 3 12 4 24 4" />
+      <path d="M32 18c10-5 15-5 24 0-6 3-12 4-24 4" />
+      <path d="M32 22v34" />
+      <path d="M32 26c-6 0-8 4-4 6 3 2 8 2 8 6s-6 4-10 2" />
+      <path d="M32 26c6 0 8 4 4 6-3 2-8 2-8 6s6 4 10 2" />
+      <path d="M32 56v6" />
+    </svg>
+  </div>
+  <span class="brand-name">Consultorio Dr. Miguel Bravo</span>
+</div>
+
+    <nav class="topnav">
+      <a href="../pages/home.html">Dashboard</a>
+      <a href="../pages/pacientes.html" class="active">Pacientes</a>
+      <a href="../pages/agenda.html">Agenda</a>
+      <a href="../pages/informes.html">Informes</a>
+    </nav>
+
+      <div class="nav-right">
+        <span id="userShort" class="muted"></span>
+        <button id="btnLogout" class="btn btn-danger">Salir</button>
+      </div>
+  </header>
+
+  <main class="container">
+    <h1 class="title">Pacientes</h1>
+    <p class="subtitle">Gestiona la información de tus pacientes</p>
+
+    <div class="toolbar">
+      <input id="q" class="input" type="search" autocomplete="off"
+             placeholder="Buscar por nombre, apellido, email o cédula…" />
+      <div class="toolbar-right">
+        <select id="fSexo" class="select" title="Filtrar por sexo">
+          <option value="">Todos</option>
+          <option value="1">Masculino</option>
+          <option value="2">Femenino</option>
+        </select>
+        <button id="btnNew" class="btn">+ Nuevo Paciente</button>
+      </div>
+    </div>
+
+    <div id="boxError" class="alert hidden"></div>
+
+    <div id="wrapper">
+            <table class="table">
+        <thead class="thead">
+          <tr>
+            <th>Paciente</th>
+            <th>Cédula</th>
+            <th>Sexo</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Dirección</th>
+            <th>F. Nacimiento</th>
+            <th>Acciones</th> <!-- NUEVA COLUMNA -->
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+
+
+      <div id="empty" class="empty hidden">No hay pacientes que coincidan.</div>
+
+      <div id="loading" class="loading hidden">
+        <div class="skeleton"></div>
+        <div class="skeleton"></div>
+        <div class="skeleton"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../javascript/pacientes.js" defer></script>
+</body>
+</html>

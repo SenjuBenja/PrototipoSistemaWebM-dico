@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restablecer contraseña — Sistema Médico</title>
+  <link rel="stylesheet" href="../styles/forgot.css" />
+</head>
+<body class="forgot-page">
+  <main class="forgot-container">
+    <div class="card">
+      <h1>Restablecer contraseña</h1>
+      <p class="muted">
+        Busca tu usuario por cédula y define una nueva contraseña.
+      </p>
+
+      <form id="frmReset">
+        <!-- Cédula -->
+        <div class="field">
+          <label for="cedula">Cédula</label>
+          <div class="field-row">
+            <input
+              type="text"
+              id="cedula"
+              name="cedula"
+              placeholder="Ingrese su cédula"
+              autocomplete="off"
+              required
+            />
+            <button type="button" id="btnBuscar" class="btn btn-secondary">
+              Buscar
+            </button>
+          </div>
+          <small id="infoMedico" class="muted hidden"></small>
+        </div>
+
+        <!-- Nueva contraseña -->
+        <div class="field">
+          <label for="newPass">Nueva contraseña</label>
+          <input
+            type="password"
+            id="newPass"
+            name="newPass"
+            placeholder="Ingrese la nueva contraseña"
+            autocomplete="new-password"
+            disabled
+            required
+          />
+        </div>
+
+        <!-- Confirmar contraseña -->
+        <div class="field">
+          <label for="confirmPass">Confirmar contraseña</label>
+          <input
+            type="password"
+            id="confirmPass"
+            name="confirmPass"
+            placeholder="Repita la nueva contraseña"
+            autocomplete="new-password"
+            disabled
+            required
+          />
+        </div>
+
+        <!-- Botón guardar -->
+        <button
+          type="submit"
+          id="btnGuardar"
+          class="btn btn-primary"
+          disabled
+        >
+          Guardar nueva contraseña
+        </button>
+      </form>
+
+      <p class="back">
+        ← <a href="../index.html">Volver al inicio de sesión</a>
+      </p>
+
+      <div id="msg" class="msg hidden"></div>
+    </div>
+  </main>
+
+  <script src="../javascript/forgot.js" defer></script>
+</body>
+</html>
